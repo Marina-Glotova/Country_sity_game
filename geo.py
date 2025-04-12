@@ -8,7 +8,7 @@ def get_coordinates(city):
     params = {
         'geocode': city,
         'format': 'json',
-        'apikey': "40d1649f-0493-4b70-98ba-98533de7710b"
+        'apikey': "8013b162-6b42-4997-9691-77b7074026e0"
     }
 
     response = requests.get(url, params)
@@ -25,7 +25,7 @@ def get_country(city):
     params = {
         'geocode': city,
         'format': 'json',
-        'apikey': "40d1649f-0493-4b70-98ba-98533de7710b"
+        'apikey': "8013b162-6b42-4997-9691-77b7074026e0"
     }
 
     response = requests.get(url, params)
@@ -54,4 +54,8 @@ def get_distance(p1, p2):
     distance = R * c
 
     return distance
+# if __name__ == '__main__':
+#     s = input()
+#     print(get_coordinates(s))
+
 
